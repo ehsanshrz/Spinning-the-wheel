@@ -15,3 +15,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Deploy to GitHub Pages
+
+The GitHub Actions workflow builds the app and deploys it to GitHub Pages when
+changes are pushed to `main`. In the repository settings, set **Pages → Build
+and deployment → Source** to **GitHub Actions**.
