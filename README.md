@@ -20,4 +20,6 @@ npm run build
 
 The GitHub Actions workflow builds the app and deploys it to GitHub Pages when
 changes are pushed to `main`. In the repository settings, set **Pages → Build
-and deployment → Source** to **GitHub Actions**.
+and deployment → Source** to **GitHub Actions**. Do not select **Deploy from a
+branch**: that serves the raw `index.html` and TypeScript source instead of the
+Vite production bundle, causing the app entrypoint to return 404.
